@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="cell"><button id="cell00" class="cellButton" onclick="cellClick('cell00')"></button></div>
+            <div class="cell"><button id="cell01" class="cellButton" onclick="cellClick('cell01')"></button></div>
+            <div class="cell"><button id="cell02" class="cellButton" onclick="cellClick('cell02')"></button></div>
+        </div>
+        <div class="row">
+            <div class="cell"><button id="cell10" class="cellButton" onclick="cellClick('cell10')"></button></div>
+            <div class="cell"><button id="cell11" class="cellButton" onclick="cellClick('cell11')"></button></div>
+            <div class="cell"><button id="cell12" class="cellButton" onclick="cellClick('cell12')"></button></div>
+        </div>
+        <div class="row">
+            <div class="cell"><button id="cell20" class="cellButton" onclick="cellClick('cell20')"></button></div>
+            <div class="cell"><button id="cell21" class="cellButton" onclick="cellClick('cell21')"></button></div>
+            <div class="cell"><button id="cell22" class="cellButton" onclick="cellClick('cell22')"></button></div>
+        </div>
+
+        <div>
+            <button value="reset" onclick="resetButton(this.value)">RESET</Button>
+            <p id="winnerInfo"></p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script> 
+</body>
+</html>
