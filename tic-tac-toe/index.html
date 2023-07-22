@@ -9,28 +9,39 @@
         document.write('<link rel="stylesheet" href="./main.css?c=' + new Date().getTime() + '">');
     </script>
 </head>
-<body>
+<body style="font-family: 'Verdana', sans-serif;">
     <div>
-        <div class="row">
-            <div class="cell"><button id="cell00" class="cellButton" onclick="cellClick('cell00')"></button></div>
-            <div class="cell"><button id="cell01" class="cellButton" onclick="cellClick('cell01')"></button></div>
-            <div class="cell"><button id="cell02" class="cellButton" onclick="cellClick('cell02')"></button></div>
-        </div>
-        <div class="row">
-            <div class="cell"><button id="cell10" class="cellButton" onclick="cellClick('cell10')"></button></div>
-            <div class="cell"><button id="cell11" class="cellButton" onclick="cellClick('cell11')"></button></div>
-            <div class="cell"><button id="cell12" class="cellButton" onclick="cellClick('cell12')"></button></div>
-        </div>
-        <div class="row">
-            <div class="cell"><button id="cell20" class="cellButton" onclick="cellClick('cell20')"></button></div>
-            <div class="cell"><button id="cell21" class="cellButton" onclick="cellClick('cell21')"></button></div>
-            <div class="cell"><button id="cell22" class="cellButton" onclick="cellClick('cell22')"></button></div>
+        <h1 class="gameTitle">TIC-TAC-TOE</h1>
+        <div class="board-container">
+            <p id="winnerInfo">Ready!</p>
+            <div class="row">
+                <div class="cell"><button id="cell00" class="cellButton" onclick="cellClick('cell00')"></button></div>
+                <div class="cell"><button id="cell01" class="cellButton" onclick="cellClick('cell01')"></button></div>
+                <div class="cell"><button id="cell02" class="cellButton" onclick="cellClick('cell02')"></button></div>
+            </div>
+            <div class="row">
+                <div class="cell"><button id="cell10" class="cellButton" onclick="cellClick('cell10')"></button></div>
+                <div class="cell"><button id="cell11" class="cellButton" onclick="cellClick('cell11')"></button></div>
+                <div class="cell"><button id="cell12" class="cellButton" onclick="cellClick('cell12')"></button></div>
+            </div>
+            <div class="row">
+                <div class="cell"><button id="cell20" class="cellButton" onclick="cellClick('cell20')"></button></div>
+                <div class="cell"><button id="cell21" class="cellButton" onclick="cellClick('cell21')"></button></div>
+                <div class="cell"><button id="cell22" class="cellButton" onclick="cellClick('cell22')"></button></div>
+            </div>
+
+            <div class="firstPlayer">
+                <span>First player</span>
+                <input type="radio" id="goFirstX" checked name="whichGoFirst" onclick='setGoFirst("X")'>
+                <label for="male">X</label>
+                <input type="radio" id="female" name="whichGoFirst" onclick='setGoFirst("O")'>
+                <label for="male">O</label>
+            </div>
+            <button class="restartButton" onclick="restartGame()">Restart</Button>
         </div>
 
-        <div>
-            <button value="reset" onclick="resetButton(this.value)">RESET</Button>
-            <p id="winnerInfo"></p>
-        </div>
+        
+
     </div>
 
     <script type="text/javascript">
