@@ -4,12 +4,6 @@
     align-items: center;
 }
 
-.cell {
-    border: 0px solid black;
-    height: 64px;
-    width: 64px;
-}
-
 .row {
     display: flex;
 }

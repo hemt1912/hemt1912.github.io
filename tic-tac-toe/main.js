@@ -44,7 +44,7 @@ function checkWinner() {
 
     // check draw
     if (cells.every(cell => cell != emptyString)) {
-        winnerInfo.innerHTML = "It's a tie";
+        winnerInfo.innerHTML = "It's tie!";
         finished = true;
         
         return;
