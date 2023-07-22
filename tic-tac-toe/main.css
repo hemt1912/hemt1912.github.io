@@ -8,8 +8,8 @@
     display: flex;
 }
 .cellButton{
-    height: 64px;
-    width: 64px;
+    height: 64px !important;
+    width: 64px !important;
     font-size: 48px;
     color: cadetblue;
 }
